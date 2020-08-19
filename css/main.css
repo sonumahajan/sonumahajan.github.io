@@ -1,44 +1,30 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background-color: black; 
+    color: white; 
+    font-family: 'Poppins', sans-serif;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+.main{
+    top:100px;
+    height: 500px;
+    width:900px;
+    position: relative;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+.name{
+    color: rgb(90, 243, 128);
+    font-size: 60px;
 }
-a {
-    text-decoration: none;
-    color: #999;
+nav{
+    position: absolute;
+    top:20%;
+    right:30px;
 }
-a:hover {
-    text-decoration: underline;
-    color: rgb(103, 231, 172);
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
+nav ul li {
+    height:60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color:white;
+    list-style-type: none;
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
 }
