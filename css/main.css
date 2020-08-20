@@ -12,6 +12,7 @@ body {
     position: relative;
 }
 a{
+    text-decoration:none;
     color: rgb(90, 243, 128);
 }
 .name{
