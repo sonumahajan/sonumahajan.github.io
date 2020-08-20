@@ -73,12 +73,12 @@ a{
     animation-duration: .7s;
     animation-timing-function: ease; 
   }
-  .lists:hover a{
+.lists:hover a{
       color:black;
-  }
-  .lists:hover .nav-item{
+}
+.lists:hover .nav-item{
       background-color:rgb(90, 243, 128);
-  }
+}
 @keyframes swing {
     0% {
         transform: rotateY(-90deg);
