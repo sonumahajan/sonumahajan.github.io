@@ -11,6 +11,9 @@ body {
     width:900px;
     position: relative;
 }
+a{
+    color: rgb(90, 243, 128);
+}
 .name{
     color: rgb(90, 243, 128);
     font-size: 60px;
@@ -69,6 +72,12 @@ body {
     animation-name: swing;
     animation-duration: .7s;
     animation-timing-function: ease; 
+  }
+  .lists:hover a{
+      color:black;
+  }
+  .lists:hover .nav-item{
+      background-color:rgb(90, 243, 128);
   }
 @keyframes swing {
     0% {
