@@ -4,7 +4,7 @@
 
 
 # home page of website
-![Test Image 4](master/images/Screenshot at 2020-08-20 18-36-16.png)
+![Test Image 4](https://github.com/sonumahajan/sonumahajan.github.io/blob/master/images/Screenshot%20at%202020-08-20%2018-36-16.png)
 
 
 
