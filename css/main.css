@@ -1,8 +1,8 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: black; 
-    color: white; 
+    /* background-color: black; 
+    color: white;  */
     font-family: 'Poppins', sans-serif;
 }
 .main{
@@ -15,16 +15,73 @@ body {
     color: rgb(90, 243, 128);
     font-size: 60px;
 }
-nav{
+/* nav{
     position: absolute;
     top:20%;
     right:30px;
+} */
+.nav-list{
+    position: absolute;
+    top: 190px;
+    right:20px;
+    list-style: none;
 }
-nav ul li {
+
+.nav-item{
+    position: relative;
+    /* perspective: 1000px; */
+    margin-bottom: 1px;
     height:60px;
     width: 60px;
     border-radius: 50%;
-    background-color:white;
-    list-style-type: none;
+    background-color:rgb(90, 243, 128);
+    text-align: center;
+    line-height: 65px;
+    vertical-align: middle;
+    margin-top: 22px;
+    z-index: 1;
+}
 
+.nav-lable{
+    display: inline-block;
+    position: absolute;
+    height:61px;
+    width:150px;
+    background-color: rgb(90, 243, 128);
+    border-radius: 50px;
+    text-align: left;
+    padding-left:30px;
+    line-height: 62px;
+    vertical-align: middle;
+    margin-top: -62px;
+    right:0px;
+    opacity: 0;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+.nav-item:hover{
+    cursor:pointer;
+    background-color: red;
+  }
+  .nav-item:hover .nav-lable{
+    visibility: visible;
+    opacity:1;
+    animation-name: swing;
+    animation-duration: .7s;
+    animation-timing-function: ease; 
+  }
+@keyframes swing {
+    0% {
+        transform: rotateY(-90deg);
+    }
+    30% {
+        transform: rotateY(35deg);
+    }
+    65% {
+        transform: rotateY(-10deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
 }
