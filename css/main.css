@@ -45,7 +45,7 @@ a{
     z-index: 1;
 }
 .nav-item .me{
-    font-size: 1.4em; /*size whatever you like*/
+    font-size: 1.4em;
 }
 
 .nav-lable{
@@ -105,7 +105,9 @@ a{
 
 .circle{
     position:absolute;
-    top:-100px; left:-100px;
+    top:-50px; left:-100px;
+    background: url("https://avatars1.githubusercontent.com/u/51477095?s=460&u=ce091423c86ed22a9ef6ffdb3161c4d1e600311b&v=4");
+    background-size: cover;
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -115,15 +117,11 @@ a{
 }
 .shadow{
     position:absolute;
-    top:-120px; left:-120px;
+    top:-70px; left:-120px;
     width: 550px;
     height: 550px;
     border-radius: 50%;
     background-color: rgb(34, 31, 31);
-}
-.circle img{
-    position: relative;
-    top:60px; left:40px;
 }
 .landt{
     list-style: none;
@@ -154,7 +152,6 @@ footer{
     position: absolute;
     bottom:0; left:0;
     background-color:rgb(34, 31, 31);
-    /* border-top:solid 2px rgb(90, 243, 128); */
 }
 .follow{
     position: absolute;
@@ -164,39 +161,87 @@ footer{
 .follow li{
     list-style:none;
     float: left;
-    margin-right:30px;
+    margin-right:50px;
 }
-@media only screen and (max-width: 600px) {
-    /* body {
-      background-color: lightblue;
-    } */
-    .main{
-        top:300px; left:-40px;
-        width:440px;
-    }
-    .name{
-        font-size: 40px;
-    }
-    .circle{
-        width:400px;
-        height:400px;
-    }
-    .shadow{
-        width:440px;
-        height:440px;
+.follow .me2{
+    font-size: 1.2em; 
+}
+
+@media only screen and (device-width : 375px) 
+                   and (device-height : 812px) 
+                   and (-webkit-device-pixel-ratio : 3){
+    body {
+      background-color:white;
+      color:black;
     }
     .nav-list{
-        top: 20px;
+        top: 25px;
+        left:8px;
     }
     .nav-item{
-        height:40px;
-        width:40px;
-        line-height: 40px;
+        float: left;
+        margin-left:35px;
+        height:120px;
+        width:120px;
+        line-height: 150px;
     }
     .nav-item .me{
-        font-size: 1em; /*size whatever you like*/
+        font-size: 4em;
     }
     .lists:hover .nav-lable{
         visibility: hidden;
+    }
+    .circle{
+        height:550px; width:550px;
+        top:260px; left:216px;
+        border:rgb(90, 243, 128) solid 5px;
+    }
+    .shadow{
+        height:600px; width:600px;
+        top:240px; left:197px;
+    }
+    .main{
+        top:850px; left:-60px;
+        width:120%;
+    }
+    .main h2,h3{
+        font-size: 60px;
+    }
+    .name{
+        font-size:100px;
+    }
+    .main p{
+        font-size: 40px;
+    }
+    .landt li img{
+        width:80px;
+        margin-right:20px;
+    }
+    footer{
+        height:140px;
+    }
+    .git{
+        margin-top:30px;
+        margin-left: 40px;
+        height:80px;
+        width:280px;
+        border-radius: 60px;
+        background-color: white;
+        line-height: 75px;
+    }
+    .git p{
+        color:black;
+        margin-left:32px;
+        font-size: 30px;
+    }
+    .follow{
+        top:60px;
+    }
+    .follow li{
+        margin-right:70px;
+        margin-top: -10px;
+    }
+    .follow .me2{
+        font-size: 2.5em; 
     }
 }
