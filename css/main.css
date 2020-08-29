@@ -219,6 +219,7 @@ footer{
         margin-right:20px;
     }
     footer{
+        padding-top:100px;
         height:140px;
     }
     .git{
