@@ -146,11 +146,11 @@ a{
     margin-left:13px;
 }
 footer{
-    position: relative;
-    height:60px;
-    width:100%;
     position: absolute;
     bottom:0; left:0;
+    height:60px;
+    width:100%;
+    margin-left: -8px;
     background-color:rgb(34, 31, 31);
 }
 .follow{
@@ -161,89 +161,87 @@ footer{
 .follow li{
     list-style:none;
     float: left;
-    margin-right:50px;
+    margin-right:40px;
 }
 .follow .me2{
     font-size: 1.2em; 
 }
 
-@media only screen and (device-width : 360px) 
+/*@media only screen and (device-width : 360px) 
                    and (device-height : 720px) 
-                   and (-webkit-device-pixel-ratio : 3)
-                   {
+                   and (-webkit-device-pixel-ratio : 3) */
+@media only screen and (max-width: 481px)    {
     body {
       background-color:white;
       color:black;
     }
     .nav-list{
-        top: 25px;
-        left:8px;
+        top:5px;
+        left:6%;
     }
     .nav-item{
         float: left;
-        margin-left:35px;
-        height:120px;
-        width:120px;
-        line-height: 150px;
+        margin-left:0.6%;
+        height:3%;
+        width:16%;
+        line-height: 55px;
     }
     .nav-item .me{
-        font-size: 4em;
+        font-size: 1.4em;
     }
     .lists:hover .nav-lable{
         visibility: hidden;
     }
     .circle{
-        height:550px; width:550px;
-        top:260px; left:216px;
+        height:25%; width:53%;
+        top:125px; left:22.5%;
         border:rgb(90, 243, 128) solid 5px;
     }
     .shadow{
-        height:600px; width:600px;
-        top:240px; left:197px;
+        height:30%; width:63%;
+        top:111px; left:19%;
     }
     .main{
-        top:850px; left:-60px;
-        width:120%;
+        top:325px; left:-10%;
+        width:124%;
+        height:auto;
     }
     .main h2,h3{
-        font-size: 60px;
+        font-size: 130%;
     }
     .name{
-        font-size:100px;
+        font-size:300%;
     }
     .main p{
-        font-size: 40px;
+        font-size: 100%;
     }
     .landt li img{
-        width:80px;
-        margin-right:20px;
+        width:30%;
+        margin-right:auto;
     }
     footer{
-        padding-top:100px;
-        height:140px;
+        height:7%;
+        bottom:-100px;
     }
     .git{
-        margin-top:30px;
-        margin-left: 40px;
-        height:80px;
-        width:280px;
-        border-radius: 60px;
+        margin-top:3.5%;
+        margin-left:5%;
+        height:55%;
+        width:40%;
+        border-radius: 20px;
         background-color: white;
-        line-height: 75px;
+        line-height:200%;
     }
     .git p{
         color:black;
-        margin-left:32px;
-        font-size: 30px;
+        margin-left:15%;
+        font-size:95%;
     }
     .follow{
-        top:60px;
+        top:30%;
+        /* right:0.1%; */
     }
     .follow li{
-        margin-right:70px;
-        margin-top: -10px;
-    }
-    .follow .me2{
-        font-size: 2.5em; 
+        margin-right:-1%;
     }
 }
