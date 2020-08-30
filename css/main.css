@@ -143,15 +143,16 @@ a{
     line-height: 40px;
 }
 .git p{
-    margin-left:13px;
+    margin-left:0;
 }
 footer{
-    position: absolute;
-    bottom:0; left:0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     height:60px;
-    width:100%;
-    margin-left: -8px;
-    background-color:rgb(34, 31, 31);
+    width: 100%;
+    background-color: rgb(34, 31, 31);
+    text-align: center;
 }
 .follow{
     position: absolute;
@@ -167,9 +168,7 @@ footer{
     font-size: 1.2em; 
 }
 
-/*@media only screen and (device-width : 360px) 
-                   and (device-height : 720px) 
-                   and (-webkit-device-pixel-ratio : 3) */
+
 @media only screen and (max-width: 481px)    {
     body {
       background-color:white;
@@ -221,7 +220,7 @@ footer{
     }
     footer{
         height:7%;
-        bottom:-100px;
+        /* bottom:-100px; */
     }
     .git{
         margin-top:3.5%;
@@ -234,7 +233,7 @@ footer{
     }
     .git p{
         color:black;
-        margin-left:15%;
+        /* margin-left:15%; */
         font-size:95%;
     }
     .follow{
