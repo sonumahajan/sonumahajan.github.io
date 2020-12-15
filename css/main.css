@@ -5,13 +5,61 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: black; 
+    /* background-color: black;  */
     color: white; 
     font-family: 'Poppins', sans-serif;
 }
+#sectionHome{
+    position: absolute;
+    top:0; left:0;
+    width:100%;
+    height:900px;
+    background-color: black;
+    z-index:-10;
+}
+#sectionAbout{
+    position:absolute;
+    top:900px; left:0;
+    height:900px;
+    width:100%;
+    background:#deeaee;
+    z-index: -10;
+}
+#sectionProject{
+    position:absolute;
+    top:1800px; left:0;
+    height:900px;
+    width:100%;
+    background:#b2b2b2;
+    z-index: -10;
+}
+#sectionSkill{
+    position:absolute;
+    top:2700px; left:0;
+    height:900px;
+    width:100%;
+    background-color: #c5d5c5;
+    z-index: -10;
+}
+#sectionIntrest{
+    position:absolute;
+    top:3600px; left:0;
+    height:900px;
+    width:100%;
+    background-color: #e4d1d1;
+    z-index: -10;
+}
+#sectionContect{
+    position:absolute;
+    top:4500px; left:0;
+    height:950px;
+    width:100%;
+    background-color: rgb(197, 192, 192);
+    z-index: -10;
+}
 .main{
     position: relative;
-    top:200px; left:280px;
+    top:320px; left:600px;
     height: 500px;
     width:900px;
 }
@@ -24,7 +72,7 @@ a{
     font-size: 60px;
 }
 .nav-list{
-    position: absolute;
+    position: fixed;
     top: 190px;
     right:20px;
     list-style: none;
@@ -44,6 +92,7 @@ a{
     margin-top: 22px;
     z-index: 1;
 }
+
 .nav-item .me{
     font-size: 1.4em;
 }
@@ -167,6 +216,185 @@ footer{
 .follow .me2{
     font-size: 1.2em; 
 }
+
+
+.form{
+    position:absolute;
+    top:280px; left:950px;
+}
+.labl{
+    color:#3b3a30;
+    font-size: 50px;
+}
+#sendername{
+    position: relative;
+    top:-10px;
+    height:40px;
+    width:250px;
+    padding-left:20px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 4px solid rgb(90, 243, 128);
+    outline: 0;
+    background-color:rgb(197, 192, 192);
+}
+#sendermessage{
+    height:40px;
+    width:550px;
+    padding-left:20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 4px solid rgb(90, 243, 128);
+    outline: 0;
+    background-color:rgb(197, 192, 192);
+}
+#senderemail{
+    height:40px;
+    width:550px;
+    padding-left:20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 4px solid rgb(90, 243, 128);
+    outline: 0;
+    background-color:rgb(197, 192, 192);
+}
+::placeholder{
+    font-size: 20px;
+}
+#senderbutton{
+    font-size: 20px;
+    color:#666664;
+    position: relative;
+    top:50px; left:180px;
+    height:60px;
+    width:200px;
+    border: 0;
+    border: 4px solid #666664;
+    border-radius: 2px;
+    outline: 0;
+}
+#senderbutton:hover{
+    border-color: rgb(90, 243, 128);
+    color:rgb(90, 243, 128);
+}
+.contectmeimage{
+    position: absolute;
+    width:600px;
+    top:170px; left:110px;
+}
+
+
+
+.big-box,.big-box1,.big-box2,.big-box3{
+    width:350px;
+    height:316px;
+    overflow: hidden;
+    box-shadow: 8px 8px 6px 8px #888888;
+    border-radius: 10px;
+    transition:all 0.5s;
+    border:solid 4px #00FF00;
+}
+
+.big-box{
+    position: absolute;
+    top:300px; left:80px;
+}
+.big-box1{
+    position:absolute;
+    top:300px; left:490px;
+}
+.big-box2{
+    position:absolute;
+    top:300px; left:900px;
+}
+.big-box3{
+    position:absolute;
+    top:300px; left:1310px;
+}
+
+ #no1{
+    width:350px;
+    height:316px;
+    position:absolute;
+    top:0px;
+    box-sizing: border-box;
+    transition:all 0.5s;
+    z-index:10;   
+}
+ #no2{
+    width:350px;
+    height:395px;
+    position:absolute;
+    top:75px;
+    box-sizing: border-box;
+    transition:all 0.5s;
+    padding:5px;
+    margin-top:25px;
+    color:whitesmoke;  
+}
+
+.big-box:hover{
+    width:350px;
+    height:454px;
+    top:50px;
+}
+.big-box:hover #no1{
+    height:309px;
+    top:0px;  
+}
+.big-box:hover #no2{
+    top:284px;
+    background-color:black; 
+}
+
+.big-box1:hover{
+    width:350px;
+    height:454px;
+    top:50px;
+}
+.big-box1:hover #no1{
+    height:309px;
+    top:0px;
+}
+.big-box1:hover #no2{
+    top:254px;
+    background-color:black;
+}
+
+
+.big-box2:hover{
+    width:350px;
+    height:454px;
+    top:50px;
+}
+.big-box2:hover #no1{
+    height:309px;
+    top:0px;
+}
+.big-box2:hover #no2{
+    top:284px;
+    background-color:black;
+}
+
+.big-box3:hover{
+    width:350px;
+    height:454px;
+    top:50px;
+}
+.big-box3:hover #no1{
+    height:309px;
+    top:0px;
+}
+.big-box3:hover #no2{
+    top:284px;
+    background-color:black;
+}
+
+
+
+
 
 
 @media only screen and (max-width: 481px)    {
