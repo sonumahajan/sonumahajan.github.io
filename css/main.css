@@ -203,6 +203,7 @@ footer{
     background-color: rgb(34, 31, 31);
     text-align: center;
 }
+
 .follow{
     position: absolute;
     right:10px;
@@ -286,6 +287,14 @@ footer{
     top:170px; left:110px;
 }
 
+.projectH{
+    font-size:50px;
+    color:rgb(37, 46, 27);
+    position: relative;
+    top:80px; left:650px;
+    text-decoration: underline;
+    text-decoration-color:rgb(90, 243, 128);
+}
 
 
 .big-box,.big-box1,.big-box2,.big-box3{
@@ -392,18 +401,21 @@ footer{
     background-color:black; 
 }
 
+
 .skillH{
     font-size:50px;
     color:rgb(37, 46, 27);
     position: relative;
     top:70px; left:720px;
+    text-decoration: underline;
+    text-decoration-color:rgb(90, 243, 128);
 }
 
 .skillUL{
     list-style: none;
-    width:90%;
+    width:80%;
     position: relative;
-    top:140px; left:170px;
+    top:120px; left:300px;
 }
 .skillUL li{
     float: left;
@@ -413,9 +425,29 @@ footer{
     margin-right:100px;
     margin-bottom:50px;
 }
-
-
-
+.aboutH{
+    font-size:50px;
+    color:rgb(37, 46, 27);
+    position: relative;
+    top:100px; left:70px;
+    text-decoration: underline;
+    text-decoration-color:rgb(90, 243, 128);
+}
+.aboutP{
+    position: relative;
+    top:200px; left:70px;
+    width:900px;
+    color:rgb(45, 48, 41);
+    font-size: 20px;
+}
+.aboutP b{
+    font-size: 26px;
+}
+.aboutImg{
+    position: relative;
+    width:800px;
+    top:-330px; left:900px;
+}
 
 @media only screen and (max-width: 481px)    {
     body {
