@@ -335,9 +335,16 @@ footer{
     height:316px;
     position:absolute;
     top:0px;
+    text-align: center;
+    background-color: white;
     box-sizing: border-box;
     transition:all 0.5s;
     z-index:10;   
+}
+#no1 img{
+    margin-top:10%;
+    height:60%;
+    width:100%;
 }
  #no2{
     width:350px;
@@ -463,78 +470,147 @@ footer{
     top:-350px; left:900px;
 }
 
+
+@viewport{
+    zoom:1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom:1.0;
+}
+
 @media only screen and (max-width: 481px)    {
-    body {
-      background-color:white;
-      color:black;
-    }
-    .nav-list{
-        top:5px;
-        left:6%;
-    }
-    .nav-item{
-        float: left;
-        margin-left:0.6%;
-        height:3%;
-        width:16%;
-        line-height: 55px;
-    }
-    .nav-item .me{
-        font-size: 1.4em;
-    }
-    .lists:hover .nav-lable{
-        visibility: hidden;
+    .shadow{
+        top:-100px;
+        height:650px;
+        width:650px;
     }
     .circle{
-        height:25%; width:53%;
-        top:125px; left:22.5%;
-        border:rgb(90, 243, 128) solid 5px;
+        top:-80px;
+        height:600px;
+        width:600px;
     }
-    .shadow{
-        height:30%; width:63%;
-        top:111px; left:19%;
+    .nav-list{
+       visibility: hidden;
     }
     .main{
-        top:325px; left:-10%;
-        width:124%;
-        height:auto;
+        left:40px; top:650px;
+        width:90%;
     }
-    .main h2,h3{
-        font-size: 130%;
+    .main h1{
+        font-size:50px;
     }
     .name{
-        font-size:300%;
+        font-size:100px;
     }
     .main p{
-        font-size: 100%;
+        margin-top:30px;
+        padding:20px;
+        line-height:60px;
+        font-size:30px;
     }
-    .landt li img{
-        width:30%;
-        margin-right:auto;
+    .aboutH{
+        top:50px;
+        left:200px;
+        font-size:50px;
     }
+    .aboutP{
+        top:400px;
+        left:50px;
+        padding:20px;
+        width:80%;
+        /* line-height:50px; */
+        font-size: 30px;
+    }
+    .aboutImg{
+        /* visibility: hidden; */
+        top:-890px;
+        left:80px;
+        /* height:380px; */
+        width:500px;
+    }
+    .projectH{
+        font-size:50px;
+        top:20px;
+        left:90px;
+    }
+    .big-box,.big-box1,.big-box2,.big-box3{
+        visibility: hidden;
+        width:550px;
+        height:266px;
+    }
+    /* #no1, #no2{
+        width:550px;
+    }
+    #no2{
+        top:284px;
+        background-color:black;
+    }
+    #no1 img{
+        margin-top:0%;
+        height:85%;
+    }
+    .big-box{
+        top:170px;
+        left:50px;
+    }
+    .big-box1{
+        top:520px;
+        left:50px;
+    }
+    .big-box2{
+        top:870px;
+        left:50px;
+    }
+    .big-box3{
+        top:1220px;
+        left:50px;
+    } */
+    
+    .skillH{
+        font-size: 50px;
+        left:180px; top:50px;
+    }
+    .skillUL{
+        top:120px; left:140px;
+    }
+    .skillUL li img{
+        width:100px;
+        margin-right: 170px;
+    }
+    .contectmeimage{
+        /* visibility: hidden; */
+        /* height:200px; */
+        left:50px; top:100px;
+        width:550px;
+        /* transform: rotate(90deg); */
+    }
+    .form{
+        top:700px;
+        left:50px;
+    }
+    #sectionHome, #sectionAbout, #sectionProject, #sectionSkill, #sectionIntrest, #sectionContect{
+        height:1450px;
+        width:180%;
+    }
+    #sectionAbout{
+        top:1450px;
+    }
+    #sectionProject{
+        height:2900px; 
+        top:2900px;
+    }
+     #sectionSkill{
+        top:5800px;
+    } 
+    #sectionIntrest{
+        top:7250px;
+    }
+     #sectionContect{
+        top:8700px;
+     }
     footer{
-        height:7%;
-        /* bottom:-100px; */
-    }
-    .git{
-        margin-top:3.5%;
-        margin-left:5%;
-        height:55%;
-        width:40%;
-        border-radius: 20px;
-        background-color: white;
-        line-height:200%;
-    }
-    .git p{
-        color:black;
-        /* margin-left:15%; */
-        font-size:95%;
-    }
-    .follow{
-        top:30%;
-        /* right:0.1%; */
-    }
-    .follow li{
-        margin-right:-1%;
+        width:50%;
     }
 }
