@@ -84,7 +84,6 @@ a{
 .aboutP{
     position: relative;
     top:14.38rem; left:0;
-    /* width:900px; */
     color:rgb(45, 48, 41);
     font-size:1.13rem;
     margin:1.25rem;
@@ -226,10 +225,6 @@ a{
     border-color: rgb(90, 243, 128);
     color:black;
 }
-#senderbutton:hover{
-    border-color: rgb(90, 243, 128);
-    color:black;
-}
 .git{
     margin-top:0.62rem;
     margin-left:0.62rem;
@@ -278,68 +273,36 @@ footer{
 
 @media only screen and (min-width : 992px) {
     #sectionHome{
-        position: absolute;
-        top:0; left:0;
-        width:100%;
         height:900px;
-        background-color: black;
-        z-index:-10;
     }
     #sectionAbout{
-        position:absolute;
         top:900px; left:0;
         height:900px;
-        width:100%;
-        background:#deeaee;
-        z-index: -10;
     }
     #sectionProject{
-        position:absolute;
         top:1800px; left:0;
         height:900px;
-        width:100%;
-        background:#b2b2b2;
-        z-index: -10;
     }
     #sectionSkill{
-        position:absolute;
         top:2700px; left:0;
         height:900px;
-        width:100%;
-        background-color: #c5d5c5;
-        z-index: -10;
     }
     #sectionIntrest{
-        position:absolute;
         top:3600px; left:0;
         height:900px;
-        width:100%;
-        background-color: #e4d1d1;
-        z-index: -10;
     }
     #sectionContect{
-        position:absolute;
         top:4500px; left:0;
         height:950px;
-        width:100%;
-        background-color: rgb(197, 192, 192);
-        z-index: -10;
     }
     .main{
-        position: relative;
         top:380px; left:570px;
         height: 500px;
-        width:100%;
     }
     .main p{
         font-size:18px;
     }
-    a{
-        text-decoration:none;
-        color: rgb(90, 243, 128);
-    }
     .name{
-        color: rgb(90, 243, 128);
         font-size:70px;
     }
     .nav-list{
@@ -425,34 +388,14 @@ footer{
     }
     
     .circle{
-        position:absolute;
         top:-50px; left:-100px;
-        background: url("https://avatars1.githubusercontent.com/u/51477095?s=460&u=ce091423c86ed22a9ef6ffdb3161c4d1e600311b&v=4");
-        background-size: cover;
         width: 500px;
         height: 500px;
-        border-radius: 50%;
-        border:rgb(90, 243, 128) solid 3px;
-        z-index:100;
-        overflow: hidden;
     }
     .shadow{
-        position:absolute;
         top:-70px; left:-120px;
         width: 550px;
         height: 550px;
-        border-radius: 50%;
-        background-color: rgb(34, 31, 31);
-    }
-    .landt{
-        list-style: none;
-    }
-    .landt li{
-        float: left;
-    }
-    .landt li img{
-        width:30px;
-        margin-right:20px;
     }
     .git{
         margin-top:10px;
@@ -460,81 +403,45 @@ footer{
         height:40px;
         width:140px;
         border-radius: 20px;
-        background-color: black;
         line-height: 40px;
     }
     .git p{
-        margin-left:0;
+        font-size:1rem;
     }
     footer{
-        position: fixed;
-        left: 0;
-        bottom: 0;
         height:60px;
-        width:100%;
-        background-color: rgb(34, 31, 31);
-        text-align: center;
     }
     
     .follow{
-        position: absolute;
         right:10px;
         top:15px;
     }
     .follow li{
-        list-style:none;
-        float: left;
         margin-right:40px;
-    }
-    .follow .me2{
-        font-size: 1.2em; 
     }
     
     
     .form{
-        position:absolute;
         top:240px; left:950px;
     }
     .labl{
-        color:#3b3a30;
         font-size: 50px;
     }
     #sendername{
-        position: relative;
         top:-10px;
         height:40px;
         width:250px;
         padding-left:20px;
         margin-bottom: 10px;
         font-size: 30px;
-        border: 0;
-        border-bottom: 4px solid rgb(90, 243, 128);
-        outline: 0;
-        background-color:rgb(197, 192, 192);
     }
-    #sendermessage{
+    #sendermessage,#senderemail{
         height:40px;
         width:550px;
         padding-left:20px;
         margin-top:10px;
         margin-bottom: 10px;
         font-size: 30px;
-        border: 0;
-        border-bottom: 4px solid rgb(90, 243, 128);
-        outline: 0;
-        background-color:rgb(197, 192, 192);
-    }
-    #senderemail{
-        height:40px;
-        width:550px;
-        padding-left:20px;
-        margin-top:10px;
-        margin-bottom: 10px;
-        font-size: 30px;
-        border: 0;
-        border-bottom: 4px solid rgb(90, 243, 128);
-        outline: 0;
-        background-color:rgb(197, 192, 192);
     }
     ::placeholder{
         font-size: 20px;
@@ -546,29 +453,20 @@ footer{
         top:50px; left:180px;
         height:60px;
         width:200px;
-        border: 0;
-        border: 4px solid #666664;
-        border-radius: 2px;
-        outline: 0;
-        background-color:rgb(197, 192, 192);
     }
     #senderbutton:hover{
         border-color: rgb(90, 243, 128);
         color:black;
     }
     .contectmeimage{
-        position: absolute;
         width:600px;
         top:170px; left:110px;
     }
     
     .projectH{
         font-size:50px;
-        color:rgb(37, 46, 27);
         position: relative;
         top:60px; left:650px;
-        text-decoration: underline;
-        text-decoration-color:rgb(90, 243, 128);
     }
     
     
@@ -695,21 +593,14 @@ footer{
     
     .skillH{
         font-size:50px;
-        color:rgb(37, 46, 27);
         position: relative;
         top:70px; left:720px;
-        text-decoration: underline;
-        text-decoration-color:rgb(90, 243, 128);
     }
     
     .skillUL{
-        list-style: none;
         width:80%;
         position: relative;
         top:120px; left:300px;
-    }
-    .skillUL li{
-        float: left;
     }
     .skillUL li img{
         width:150px;
@@ -718,24 +609,18 @@ footer{
     }
     .aboutH{
         font-size:50px;
-        color:rgb(37, 46, 27);
         position: relative;
         top:100px; left:70px;
-        text-decoration: underline;
-        text-decoration-color:rgb(90, 243, 128);
     }
     .aboutP{
-        position: relative;
         top:220px; left:70px;
         width:900px;
-        color:rgb(45, 48, 41);
         font-size: 20px;
     }
     .aboutP b{
         font-size: 26px;
     }
     .aboutImg{
-        position: relative;
         width:800px;
         top:-350px; left:900px;
     }
