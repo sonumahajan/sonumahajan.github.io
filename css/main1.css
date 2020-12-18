@@ -113,9 +113,6 @@ a{
     text-decoration: underline;
     text-decoration-color:rgb(90, 243, 128);
 }
-.big-box,.big-box1,.big-box2,.big-box3{
-    visibility: hidden;
-}
 #sectionSkill{
     position:absolute;
     top:151.88rem; left:0;
@@ -573,7 +570,6 @@ footer{
     
     
     .big-box,.big-box1,.big-box2,.big-box3{
-        visibility: visible;
         width:350px;
         height:316px;
         overflow: hidden;
