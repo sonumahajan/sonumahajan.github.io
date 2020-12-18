@@ -2,10 +2,13 @@
     margin:0;
     padding:0;
 }
-body {
+html,body{
+    height:100%;
+    width:100%;
+    /* margin:0px; */
+    padding:0px;
+    overflow-x: hidden;
     margin: 60px auto;
-    /* width: 70%; */
-    /* background-color: black;  */
     color: white; 
     font-family: 'Poppins', sans-serif;
 }
@@ -481,47 +484,57 @@ footer{
 }
 
 @media only screen and (max-width: 481px)    {
+    html,body{
+    height:100%;
+    width:100%;
+    /* margin:0px; */
+    padding:0px;
+    overflow-x: hidden;
+    }
     .shadow{
-        top:-100px;
-        height:650px;
-        width:650px;
+        /* top:-100px; */
+        height:450px;
+        width:450px;
     }
     .circle{
-        top:-80px;
-        height:600px;
-        width:600px;
+        /* top:-80px; */
+        height:400px;
+        width:400px;
     }
     .nav-list{
        visibility: hidden;
     }
     .main{
-        left:40px; top:650px;
-        width:90%;
+        left:40px; top:450px;
+        width:80%;
     }
     .main h1{
-        font-size:50px;
+        font-size:30px;
     }
     .name{
-        font-size:100px;
+        font-size:50px;
     }
     .main p{
-        margin-top:30px;
-        padding:20px;
-        line-height:60px;
-        font-size:30px;
+        /* margin-top:30px; */
+        /* padding:20px; */
+        line-height:30px;
+        font-size:15px;
     }
     .aboutH{
         top:50px;
-        left:200px;
-        font-size:50px;
+        left:110px;
+        font-size:30px;
     }
     .aboutP{
-        top:400px;
-        left:50px;
+        top:100px;
+        left:20px;
         padding:20px;
         width:80%;
         /* line-height:50px; */
-        font-size: 30px;
+        font-size: 15px;
+    }
+    .aboutP b{
+        font-size:20px;
     }
     .aboutImg{
         /* visibility: hidden; */
@@ -591,15 +604,15 @@ footer{
         left:50px;
     }
     #sectionHome, #sectionAbout, #sectionProject, #sectionSkill, #sectionIntrest, #sectionContect{
-        height:1450px;
-        width:180%;
+        height:810px;
+        width:100%;
     }
     #sectionAbout{
-        top:1450px;
+        top:810px;
     }
     #sectionProject{
-        height:2900px; 
-        top:2900px;
+        height:1000px; 
+        top:1620px;
     }
      #sectionSkill{
         top:5800px;
