@@ -27,8 +27,8 @@ html,body{
     top:-3rem; left:-6rem;
     background: url("https://avatars1.githubusercontent.com/u/51477095?s=460&u=ce091423c86ed22a9ef6ffdb3161c4d1e600311b&v=4");
     background-size: cover;
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
     border:rgb(90, 243, 128) solid 3px;
     z-index:100;
@@ -37,14 +37,14 @@ html,body{
 .shadow{
     position:absolute;
     top:-4rem; left:-7rem;
-    width:28rem;
-    height:28rem;
+    width:23rem;
+    height:23rem;
     border-radius: 50%;
     background-color: rgb(34, 31, 31);
 }
 .main{
     position:absolute;
-    top:25rem; left:0;
+    top:22rem; left:0;
     height:31rem;
     width:100%;
 }
