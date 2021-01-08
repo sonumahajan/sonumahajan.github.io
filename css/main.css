@@ -58,15 +58,16 @@ html,body{
 }
 #resumeButton{
     position:absolute;
-    left:100px;
+    left:100px; top:690px;
     border-radius:4px;
-    border-style: none;
     margin-top:10px;
     width:150px;
     height:40px;
     background-color: rgba(255, 255, 255, 0);
     color: white;
     border: 2px solid rgb(90, 243, 128);
+    text-align: center;
+    line-height:55px;
 }
 a{
     text-decoration:none;
@@ -415,14 +416,15 @@ footer{
         font-size:18px;
     }
     #resumeButton{
-        left:300px;
+        top:650px;
+        left:800px;
         border-radius:5px;
         margin-top:30px;
         width:200px;
         height:60px;
         font-size:20px;
     }
-    /* #resumeButton:hover{
+    #resumeButton:hover{
         cursor: pointer;
         animation: jelly 0.5s;
     }
@@ -438,7 +440,7 @@ footer{
         75% {
           transform: scale(0.95, 1.05);
         }
-    } */
+    }
     .name{
         font-size:70px;
     }
