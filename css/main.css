@@ -67,7 +67,7 @@ html,body{
     color: white;
     border: 2px solid rgb(90, 243, 128);
     text-align: center;
-    line-height:55px;
+    line-height:40px;
 }
 a{
     text-decoration:none;
@@ -423,6 +423,7 @@ footer{
         width:200px;
         height:60px;
         font-size:20px;
+        line-height: 55px;
     }
     #resumeButton:hover{
         cursor: pointer;
