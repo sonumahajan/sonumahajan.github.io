@@ -737,16 +737,37 @@ footer{
         top:80px; left:770px;
     }
     .mcaBox,.bcaBox{
-        background-color: red;
         border-radius: 10px;
-        border:4px solid rgb(90, 243, 128);
-        position: absolute;
-        top:240px; left:200px;
+        top:280px; left:200px;
         height:370px;
         width:550px;
+        padding:10px;
     }
     .bcaBox{
         left:1000px;
+    }
+    .bcaBox h1, .mcaBox h1{
+        font-size: 40px;
+        text-align: center; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .bcaBox h3, .mcaBox h3{
+        font-size: 25px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+    .bcaBox h4, .mcaBox h4{
+        font-size: 20px;
+        margin-left: 10px;
+        position: absolute;
+        bottom:55px;
+    }
+    .bcaBox p, .mcaBox p{
+        font-size: 20px;
+        position: absolute;
+        right:20px; bottom:55px;
+        margin-left: 10px;
     }
     .aboutH{
         font-size:50px;
