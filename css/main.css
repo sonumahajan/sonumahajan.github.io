@@ -1,7 +1,6 @@
 *{
     margin:0;
     padding:0;
-    /* border: 1px solid red; */
 }
 html,body{
     height:100%;
@@ -19,7 +18,7 @@ html,body{
     top:0;left:0;
     height:50rem;
     width:100%;
-    background-color: black;
+    background-color: rgb(71,51,102);
     z-index: -10;
 }
 .circle{
@@ -30,7 +29,7 @@ html,body{
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    border:rgb(90, 243, 128) solid 3px;
+    border:rgb(230,94,51) solid 3px;
     z-index:100;
     overflow: hidden;
 }
@@ -65,16 +64,16 @@ html,body{
     height:40px;
     background-color: rgba(255, 255, 255, 0);
     color: white;
-    border: 2px solid rgb(90, 243, 128);
+    border: 2px solid rgb(230,94,51);
     text-align: center;
     line-height:40px;
 }
 a{
     text-decoration:none;
-    color: rgb(90, 243, 128);
+    color: rgb(230,94,51);
 }
 .name{
-    color: rgb(90, 243, 128);
+    color: rgb(230,94,51);
     font-size:3.13rem;
     margin:1.25rem;
 }
@@ -92,7 +91,7 @@ a{
     position: absolute;
     top:1.88rem; left:5rem;
     text-decoration: underline;
-    text-decoration-color:rgb(90, 243, 128);
+    text-decoration-color:rgb(230,94,51);
 }
 .aboutP{
     position: absolute;
@@ -101,8 +100,8 @@ a{
     font-size:1rem;
     margin:1.25rem;
 }
-.aboutP b{
-    font-size:1.25rem;
+.aboutP span{
+    color:rgb(230,94,51); 
 }
 .aboutImg{
     position: absolute;
@@ -123,7 +122,7 @@ a{
     position: absolute;
     top:1.88rem; left:1.60rem;
     text-decoration: underline;
-    text-decoration-color:rgb(90, 243, 128);
+    text-decoration-color:rgb(230,94,51);
 }
 
 
@@ -136,7 +135,7 @@ a{
     box-shadow: 8px 8px 6px 8px #888888;
     border-radius: 10px;
     transition:all 0.5s;
-    border:solid 4px #00FF00;
+    border:solid 4px rgb(230,94,51);
     margin-left: auto;
     margin-right: auto;
 }
@@ -165,7 +164,7 @@ a{
     position:absolute;
     top:0px;
     text-align: center;
-    background-color: white;
+    background-color: whitesmoke;
     box-sizing: border-box;
     transition:all 0.5s;
     z-index:10; 
@@ -184,8 +183,8 @@ a{
     transition:all 0.5s;
     padding:20px;
     margin-top:25px;
-    background-color: black;
-    color:whitesmoke;  
+    background-color:  rgb(71,51,102);
+    color: whitesmoke;  
 }
 #no2 h2{
     margin-bottom: 10px;
@@ -209,7 +208,7 @@ a{
     position: absolute;
     top:2.5rem; left:4.06rem;
     text-decoration: underline;
-    text-decoration-color:rgb(90, 243, 128);
+    text-decoration-color:rgb(230,94,51);
 }
 .skillUL{
     list-style: none;
@@ -238,18 +237,19 @@ a{
     position: absolute;
     top:2.5rem; left:80px;
     text-decoration: underline;
-    text-decoration-color:rgb(90, 243, 128);
+    text-decoration-color:rgb(230,94,51);
 }
 .mcaBox,.bcaBox{
-    background-color: black;
+    background-color:rgb(71,51,102);
     border-radius: 10px;
-    border:4px solid rgb(90, 243, 128);
+    border:4px solid rgb(230,94,51);
     position: absolute;
     top:140px; left:25px;
     height:270px;
     width:310px;
 }
 .bcaBox h1, .mcaBox h1{
+    color:rgb(230,94,51);
     text-align: center; 
     margin-top: 20px;
     margin-bottom: 20px;
@@ -302,7 +302,7 @@ a{
     margin-left:0.31rem;
     font-size: 1.88rem;
     border: 0;
-    border-bottom: 4px solid rgb(90, 243, 128);
+    border-bottom: 4px solid rgb(230,94,51);
     outline: 0;
     background-color:rgb(197, 192, 192);
 }
@@ -314,7 +314,7 @@ a{
     margin-bottom: 0.62rem;
     font-size: 1.88rem;
     border: 0;
-    border-bottom: 4px solid rgb(90, 243, 128);
+    border-bottom: 4px solid rgb(230,94,51);
     outline: 0;
     background-color:rgb(197, 192, 192);
 }
@@ -333,23 +333,10 @@ a{
     border-radius: 2px;
     outline: 0;
     background-color:rgb(197, 192, 192);
-    border-color: rgb(90, 243, 128);
+    border-color: rgb(230,94,51);
     color:black;
 }
 
-.git{
-    margin-top:0.62rem;
-    margin-left:0.62rem;
-    height:2.5rem;
-    width:6.25rem;
-    border-radius: 1.25rem;
-    background-color: black;
-    line-height: 2.5rem;
-}
-.git p{
-    margin-left:0;
-    font-size: 0.62rem;
-}
 footer{
     position: fixed;
     left: 0;
@@ -363,13 +350,13 @@ footer{
 
 .follow{
     position: absolute;
-    right:1.25rem;
+    right:1.40rem;
     top:1.12rem;
 }
 .follow li{
     list-style:none;
     float: left;
-    margin-left:1.56rem;
+    margin-left:2.5rem;
 }
 .follow .me2{
     font-size: 1.2em; 
@@ -477,7 +464,7 @@ footer{
         position: absolute;
         height:60px;
         width:150px;
-        background-color: rgb(90, 243, 128);
+        background-color: rgb(230,94,51);
         border-radius: 50px;
         text-align: left;
         padding-left:30px;
@@ -495,7 +482,7 @@ footer{
     }
     .nav-item:hover{
         cursor:pointer;
-        background-color: rgb(90, 243, 128);
+        background-color: rgb(230,94,51);
       }
     
     .lists:hover .nav-lable{
@@ -510,7 +497,7 @@ footer{
           color:black;
     }
     .lists:hover .nav-item{
-          background-color:rgb(90, 243, 128);
+          background-color:rgb(230,94,51);
     }
     @keyframes swing {
         0% {
@@ -536,17 +523,6 @@ footer{
         top:-70px; left:-120px;
         width: 550px;
         height: 550px;
-    }
-    .git{
-        margin-top:10px;
-        margin-left: 60px;
-        height:40px;
-        width:140px;
-        border-radius: 20px;
-        line-height: 40px;
-    }
-    .git p{
-        font-size:1rem;
     }
     footer{
         height:60px;
@@ -595,7 +571,7 @@ footer{
         width:200px;
     }
     #senderbutton:hover{
-        border-color: rgb(90, 243, 128);
+        border-color: rgb(230,94,51);
         color:black;
         animation: sendJelly 0.5s;
     }
@@ -671,7 +647,7 @@ footer{
     }
     .big-box:hover #no2{
         top:284px;
-        background-color:black; 
+        background-color:rgb(71,51,102); 
     }
     
     .big-box1:hover{
@@ -686,7 +662,7 @@ footer{
     }
     .big-box1:hover #no2{
         top:284px;
-        background-color:black; 
+        background-color:rgb(71,51,102); 
     }
     
     .big-box2:hover{
@@ -700,7 +676,7 @@ footer{
     }
     .big-box2:hover #no2{
         top:284px;
-        background-color:black; 
+        background-color:rgb(71,51,102); 
     }
     
     .big-box3:hover{
@@ -715,7 +691,7 @@ footer{
     }
     .big-box3:hover #no2{
         top:284px;
-        background-color:black; 
+        background-color:rgb(71,51,102); 
     }
     
     
@@ -735,6 +711,17 @@ footer{
         margin-right:100px;
         margin-bottom:50px;
     }
+    /* .skillnameUl{
+        list-style: none;
+        position: absolute;
+        top:350px; left:335px;
+        color:rgb(37, 46, 27);
+    }
+    .skillnameUl li{
+        float:left;
+        margin-right:210px;
+        margin-bottom:150px;
+    } */
     .educationH{
         font-size:50px;
         top:80px; left:770px;
