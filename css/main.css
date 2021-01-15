@@ -592,7 +592,7 @@ footer{
 
     .contectmeimage{
         width:600px;
-        top:170px; left:110px;
+        top:170px; left:90px;
     }
     
     .projectH{
@@ -636,60 +636,60 @@ footer{
         margin-top:25px;
     }
     
-    .big-box:hover{
+    #sectionProject:hover .big-box{
         width:350px;
         height:554px;
         top:200px;
     }
-    .big-box:hover #no1{
+    #sectionProject:hover #no1{
         height:309px;
         top:0px;  
     }
-    .big-box:hover #no2{
+    #sectionProject:hover #no2{
         top:284px;
         background-color:rgb(71,51,102); 
     }
     
-    .big-box1:hover{
+    #sectionProject:hover .big-box1{
         width:350px;
         height:554px;
         /* top:100px; */
         bottom:100px ;
     }
-    .big-box1:hover #no1{
+    #sectionProject:hover #no1{
         height:309px;
         top:0px;  
     }
-    .big-box1:hover #no2{
+    #sectionProject:hover #no2{
         top:284px;
         background-color:rgb(71,51,102); 
     }
     
-    .big-box2:hover{
+    #sectionProject:hover .big-box2{
         width:350px;
         height:554px;
         top:200px;
     }
-    .big-box2:hover #no1{
+    #sectionProject:hover  #no1{
         height:309px;
         top:0px;  
     }
-    .big-box2:hover #no2{
+    #sectionProject:hover  #no2{
         top:284px;
         background-color:rgb(71,51,102); 
     }
     
-    .big-box3:hover{
+    #sectionProject:hover .big-box3{
         width:350px;
         height:554px;
         /* top:100px; */
         bottom: 100px;
     }
-    .big-box3:hover #no1{
+    #sectionProject:hover  #no1{
         height:309px;
         top:0px;  
     }
-    .big-box3:hover #no2{
+    #sectionProject:hover  #no2{
         top:284px;
         background-color:rgb(71,51,102); 
     }
@@ -728,13 +728,13 @@ footer{
     }
     .mcaBox,.bcaBox{
         border-radius: 10px;
-        top:280px; left:200px;
+        top:280px; left:90px;
         height:370px;
-        width:550px;
+        width:650px;
         padding:10px;
     }
     .bcaBox{
-        left:1000px;
+        left:950px;
     }
     .bcaBox h1, .mcaBox h1{
         font-size: 40px;
