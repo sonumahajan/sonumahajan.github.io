@@ -343,7 +343,7 @@ footer{
     bottom: 0;
     height:3.75rem;
     width:100%;
-    background-color: rgb(34, 31, 31);
+    background-color: rgb(32, 21, 49);
     text-align: center;
     z-index:1000;
 }
@@ -447,7 +447,7 @@ footer{
         height:60px;
         width: 60px;
         border-radius: 50%;
-        background-color:rgb(34, 31, 31);
+        background-color:rgb(32, 21, 49);
         text-align: center;
         line-height: 65px;
         vertical-align: middle;
