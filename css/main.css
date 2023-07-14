@@ -108,14 +108,27 @@ a{
     width:15.625rem;
     top:4rem; left:3.125rem;
 }
-/* #sectionExperience{
-    position:absolute;
-    top:110rem; left:0;
-    height:51rem;
+
+ /* experiance section start from here  */
+#sectionExperience{
+    position: absolute;
+    top:0;left:0;
+    height:50rem;
     width:100%;
-    background:#295f71;
+    background-color: rgb(242, 224, 192);
+    color: black;
     z-index: -10;
-} */
+}
+.ExperienceH{
+    font-size:2rem;
+    color:rgb(37, 46, 27);
+    position: absolute;
+    top:1.88rem; left:1.60rem;
+    text-decoration: underline;
+    text-decoration-color:rgb(230,94,51);
+}
+
+ /* Project section start from here  */
 #sectionProject{
     position:absolute;
     top:100.94rem; left:0;
@@ -378,7 +391,7 @@ footer{
     width: extend-to-zoom;
     zoom:1.0;
 }
-
+ /* for laptop and desktop screen  */
 @media only screen and (min-width : 992px) {
     #sectionHome{
         height:900px;
@@ -387,20 +400,24 @@ footer{
         top:900px; left:0;
         height:900px;
     }
-    #sectionProject{
+    #sectionExperience{
         top:1800px; left:0;
         height:900px;
     }
-    #sectionSkill{
+    #sectionProject{
         top:2700px; left:0;
         height:900px;
     }
-    #sectionEducation{
+    #sectionSkill{
         top:3600px; left:0;
         height:900px;
     }
-    #sectionContect{
+    #sectionEducation{
         top:4500px; left:0;
+        height:900px;
+    }
+    #sectionContect{
+        top:5400px; left:0;
         height:950px;
     }
     .main{
@@ -602,7 +619,17 @@ footer{
         width:600px;
         top:170px; left:90px;
     }
-    
+
+    .ExperienceH{
+        font-size:50px;
+        position: relative;
+        top:60px; left:750px;
+    }
+    .trident{
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+
     .projectH{
         font-size:50px;
         position: relative;
