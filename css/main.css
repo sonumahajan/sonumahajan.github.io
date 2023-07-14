@@ -108,6 +108,14 @@ a{
     width:15.625rem;
     top:4rem; left:3.125rem;
 }
+/* #sectionExperience{
+    position:absolute;
+    top:110rem; left:0;
+    height:51rem;
+    width:100%;
+    background:#295f71;
+    z-index: -10;
+} */
 #sectionProject{
     position:absolute;
     top:100.94rem; left:0;
@@ -435,7 +443,7 @@ footer{
     .nav-list{
         visibility: visible;
         position: fixed;
-        top: 190px;
+        top: 100px;
         right:20px;
         list-style: none;
     }
