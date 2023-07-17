@@ -625,6 +625,10 @@ footer{
         position: relative;
         top:60px; left:750px;
     }
+    .experianceUl li {
+        font-size: 22px;
+        margin-left: 40px;
+    }
     .trident{
         margin-left: 100px;
         margin-top: 100px;
