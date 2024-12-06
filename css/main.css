@@ -110,6 +110,46 @@
     font-size: 0.9rem; /* Smaller font size */
     line-height: 1.4; /* Reduced line-height */
   }
+
+/* Tools & Technologies Section */
+#tools {
+  background-color: #f8682a; /* Using your theme color */
+  padding: 50px 0;
+  color: #fff; /* White text color */
+}
+
+#tools h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff; /* White color for heading */
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tools img {
+  width: 50px; /* Adjusted image size */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tools img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2); /* Brighten the image on hover */
+}
+
+@media (max-width: 768px) {
+  .tools img {
+    width: 40px; /* Reduced size on mobile */
+  }
+}
+
   
   /* Social Media Section */
   #social-media {
