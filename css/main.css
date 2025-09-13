@@ -53,6 +53,8 @@ body {
   position: relative;
 }
 
+
+
 #background-canvas {
   position: fixed;
   top: 0;
@@ -533,6 +535,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.6rem;
+  margin-top: 15vh;
 }
 
 .about-card {
@@ -697,10 +700,12 @@ nav {
 }
 
 /* Projects Section */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  margin-top: -3vh;
 }
 
 .project-card {
@@ -1272,4 +1277,15 @@ footer {
   margin-top: 15px;
   margin: 1px;
   font-size: 14px;
+}
+.logo span {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400; /* or another value like 700 depending on what you want */
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
 }
