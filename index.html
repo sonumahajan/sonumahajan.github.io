@@ -3,305 +3,521 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sonu Mahajan</title>
+    <title>Sonu Mahajan | Full-Stack Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Raleway:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
   </head>
+  <body class="dark-mode">
+    <!-- Background Animation Canvas -->
+    <canvas id="background-canvas"></canvas>
 
-  <body>
-    <!-- Home Section -->
-    <section id="home">
+    <!-- Cloud Animation (Light Mode Only) -->
+    <div id="background-wrap">
+      <div class="x1">
+        <div class="cloud"></div>
+      </div>
+      <div class="x2">
+        <div class="cloud"></div>
+      </div>
+      <div class="x3">
+        <div class="cloud"></div>
+      </div>
+      <div class="x4">
+        <div class="cloud"></div>
+      </div>
+      <div class="x5">
+        <div class="cloud"></div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
       <div class="container">
-        <img
-          src="https://avatars1.githubusercontent.com/u/51477095?s=460&u=ce091423c86ed22a9ef6ffdb3161c4d1e600311b&v=4"
-          alt="Your Profile Picture"
-          class="profile-img"
-        />
-        <h1>Sonu Mahajan</h1>
-        <p class="quote">
-          "Coding is not just about writing code. It’s about solving problems
-          and creating solutions."
-        </p>
-        <a href="images/sonuMCA.pdf" download class="btn">Download Resume</a>
-        <a href="https://sonumahajan.github.io/portfolio_kaboom/" target='_blank' class="btn">My Portfolio Game</a>
+        <nav>
+          <a href="#" class="logo">
+            <span>SONU</span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#game">Game</a></li>
+          </ul>
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg-animation">
+        <div class="hero-bg-circle"></div>
+        <div class="hero-bg-circle"></div>
+        <div class="hero-bg-circle"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>
+              Full-Stack Developer
+              <span>Specializing in Enterprise Integration</span>
+            </h1>
+            <p>
+              I design and implement digital solutions that streamline
+              operations and enhance productivity for organizations with 17,000+
+              employees and 18,000+ IT assets. Passionate about creating
+              efficient systems that solve real-world problems.
+            </p>
+            <div class="btn-container">
+              <a
+                href="images/resume2025.pdf"
+                class="btn"
+                download
+                id="download-resume"
+                style="padding-top: 2.4vh"
+                >Download Resume</a
+              >
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <!-- <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Coding Image"> -->
+            <img
+              align="right"
+              alt="Coding"
+              src="https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif"
+            />
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="about">
       <div class="container">
-        <h2>About Me</h2>
-        <p><strong>Name:</strong> Sonu Mahajan</p>
-        <p>
-          <strong>Qualifications:</strong> Bachelor’s & Master’s in Application
-        </p>
-        <p>
-          <strong>Expertise:</strong> Full Stack Development, Database, Windows
-          IIS, SAP PI/PO Integration, SharePoint Integration, Scripting,
-          Solution Architecture, Cybersecurity
-        </p>
-        <p>
-          <strong>Passion:</strong> I am passionate about leveraging technology
-          to streamline operations, enhance efficiency, and derive meaningful
-          insights from data. I am eager to collaborate with like-minded teams
-          to create innovative solutions. Let’s work together to bring ideas to
-          life!
-        </p>
+        <h2 class="section-title">Professional Summary</h2>
+        <div class="about-grid">
+          <div class="about-card animate">
+            <i class="fas fa-code"></i>
+            <h3>Development</h3>
+            <p>
+              Specializing in enterprise integration and automation with Python,
+              Django, SAP PI/PO, and REST APIs. Experienced in developing
+              scalable solutions that handle complex business processes and
+              large datasets efficiently.
+            </p>
+          </div>
+          <div class="about-card animate">
+            <i class="fas fa-sync-alt"></i>
+            <h3>Integration</h3>
+            <p>
+              Proven success in ERP-HCM integrations, QR/RFID platforms, and
+              real-time analytics dashboards. Expertise in connecting disparate
+              systems to create seamless workflows and data exchange processes.
+            </p>
+          </div>
+          <div class="about-card animate">
+            <i class="fas fa-chart-line"></i>
+            <h3>Impact</h3>
+            <p>
+              Delivered digital solutions for 17,000+ employees and managed
+              18,000+ IT assets at Trident Limited. Focused on creating
+              solutions that provide measurable business value and improve
+              operational efficiency.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
+    <section id="experience" class="experience">
       <div class="container">
-        <h2>Professional Experience</h2>
-        <!-- Full-Time Job Experience -->
-        <div class="project">
-          <h3>
-            Function Lead Developer | Trident Limited, Ludhiana (Oct 2023 - Present)
-          </h3>
-          <p>I have worked on several integration projects, such as integrating machines with SAP, and have created software utilities and projects to streamline business processes. I also implemented new technologies and projects for Digital 4.0.</p>
-        </div>
-        <div class="project">
-          <h3>Internship | Trident Limited, Bhopal (Jan 2023 - July 2023)</h3>
-          <p>During my internship, I worked on several integration projects and created dashboards to analyze the data from machines.</p>
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item animate">
+            <div class="timeline-content">
+              <h3>Functional Lead Developer</h3>
+              <div class="timeline-date">
+                Oct 2023 - Present | Trident Limited, Punjab, India
+              </div>
+              <p>
+                Designed and implemented a QR-enabled Digital Business Card
+                system for 500+ employees, replacing physical cards and
+                integrated with the HCM system. Developed a QR/RFID-enabled
+                Asset Inventory platform managing ~18,000 IT assets.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item animate">
+            <div class="timeline-content">
+              <h3>SAP MES Intern</h3>
+              <div class="timeline-date">
+                Jan 2023 - Jul 2023 | Trident Limited, MP, India
+              </div>
+              <p>
+                Enabled equipment data integration with ERP for centralized
+                monitoring and reporting. Developed user-friendly dashboards for
+                real-time manufacturing process tracking and performance
+                analysis.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Co-Curricular Activities Section -->
-    <section id="co-curricular">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
       <div class="container">
-        <h2>Co-Curricular Activities</h2>
-        <div class="activity">
-          <h3>Indian Army Cyber Security Hackathon - 2021</h3>
-          <p>• Participated in the Indian Army Cyber Security Hackathon, Sainya-Ranakshetram, 2021.</p>
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-container">
+          <div class="skill-category animate">
+            <h3><i class="fas fa-laptop-code"></i> Programming & Databases</h3>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Python</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+              <span>90%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Java</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+              <span>85%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>SQL</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="88%"></div>
+              </div>
+              <span>88%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="82%"></div>
+              </div>
+              <span>82%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>HTML/CSS</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="87%"></div>
+              </div>
+              <span>87%</span>
+            </div>
+          </div>
+          <div class="skill-category animate">
+            <h3><i class="fas fa-tools"></i> Frameworks & Tools</h3>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Django</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="92%"></div>
+              </div>
+              <span>92%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>SAP PI/PO</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="87%"></div>
+              </div>
+              <span>87%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>REST APIs</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="91%"></div>
+              </div>
+              <span>91%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Git/GitHub</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="89%"></div>
+              </div>
+              <span>89%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>AWS</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="78%"></div>
+              </div>
+              <span>78%</span>
+            </div>
+          </div>
         </div>
-        <br>
-        <div class="activity">
-          <h3>Hacktoberfest 2020, 2021, 2022</h3>
-          <p>• Contributed to open source projects during the Hacktoberfest event for the past three years.</p>
-        </div>
-        <br>
-        <div class="activity">
-          <h3>Brain Googler - 2020</h3>
-          <p>• 3rd position in a website development competition organized by KLSD College.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications">
-      <div class="container">
-        <h2>Certifications</h2>
-        <ul>
-          <li>“Introduction to Cyber Security” from Swayam, 2021</li>
-          <li>“Overview of Geoprocessing using Python” from ISRO, 2021</li>
-          <li>“Responsive Web Design” from freecodecamp, 2019</li>
-        </ul>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="projects">
       <div class="container">
-        <h2>My Projects</h2>
-        <div class="project">
-          <h3>Study Material App</h3>
-          <p>
-            Using Python and Kivy module. Cross-platform app for college
-            students to access old question papers, notes, and important
-            questions. (Currently working on it)
-          </p>
-          <img
-            src="images/study-material-app.png"
-            alt="Study Material App Screenshot"
-          />
-        </div>
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card animate">
+            <div class="project-image">
+              <!-- <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Study Material App"> -->
+              <img
+                src="images/study-material-app.png"
+                alt="Study Material App"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Study Material App</h3>
+              <p class="project-description">
+                Cross-platform app for college students to access old question
+                papers, notes, and important questions. Built with Python and
+                Kivy framework.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Kivy</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+              <a
+                href="https://github.com/sonumahajan/study-material-app"
+                target="_blank"
+                class="project-link"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
 
-        <div class="project">
-          <h3>Electronic Web Store</h3>
-          <p>
-            Using HTML, CSS, JavaScript, SQL, and PHP. A fully functional web
-            store for electronic devices with login, logout, product display,
-            add to cart, and admin panel.
-          </p>
-          <img src="images/mobile1.jpg" alt="Electronic Web Store Screenshot" />
-        </div>
+          <div class="project-card animate">
+            <div class="project-image">
+              <!-- <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Electronic Web Store"> -->
+              <img
+                src="images/mobile1.jpg"
+                alt="Electronic Web Store Screenshot"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Electronic Web Store</h3>
+              <p class="project-description">
+                A fully functional web store for electronic devices with login,
+                logout, product display, add to cart, and admin panel
+                functionality.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <a
+                href="https://github.com/sonumahajan/Electronic-Web-Store"
+                target="_blank"
+                class="project-link"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
 
-        <div class="project">
-          <h3>Desktop Assistance</h3>
-          <p>
-            Using Python and APIs. A digital assistant to perform tasks like
-            opening websites, playing songs, sending emails, and more.
-          </p>
-          <img
-            src="images/assistance.jpeg"
-            alt="Desktop Assistance Screenshot"
-          />
-        </div>
-
-        <div class="project">
-          <h3>Receipt Generator</h3>
-          <p>
-            Using Python modules. A receipt printer program that allows users to
-            input data and print receipts.
-          </p>
-          <img
-            src="images/receipt-printer.png"
-            alt="Receipt Generator Screenshot"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Tools & Technologies Section -->
-    <section id="tools">
-      <div class="container">
-        <h2>Tools & Technologies</h2>
-        <div class="tools">
-          <div class="tool-item">
-            <img src="images/git.png" alt="Git Logo" />
-            <p>Git</p>
+          <div class="project-card animate">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                alt="Desktop Assistance"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Desktop Assistance</h3>
+              <p class="project-description">
+                A digital assistant to perform tasks like opening websites,
+                playing songs, sending emails, and more using Python and various
+                APIs.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">APIs</span>
+                <span class="tech-tag">Automation</span>
+              </div>
+              <a
+                href="https://github.com/sonumahajan/Desktop-Assistance"
+                target="_blank"
+                class="project-link"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
-          <div class="tool-item">
-            <img src="images/git1.png" alt="GitHub Logo" />
-            <p>GitHub</p>
-          </div>
-          <div class="tool-item">
-            <img src="images/python3.png" alt="Python Logo" />
-            <p>Python</p>
-          </div>
-          <div class="tool-item">
-            <img src="images/html5.png" alt="HTML Logo" />
-            <p>HTML5</p>
-          </div>
-          <div class="tool-item">
-            <img src="images/css3.png" alt="CSS Logo" />
-            <p>CSS3</p>
-          </div>
-          <div class="tool-item">
-            <img src="images/js.png" alt="JavaScript Logo" />
-            <p>JavaScript</p>
-          </div>
-          <div class="tool-item">
-            <img src="images/django.png" alt="Django Logo" />
-            <p>Django</p>
-          </div>
-          <div class="tool-item">
-            <img src="images/Flask.png" alt="Flask Logo" />
-            <p>Flask</p>
-          </div>
-          <div class="tool-item">
-            <img src="images/linux.png" alt="Linux Logo" />
-            <p>Linux</p>
-          </div>
-          <div class="tool-item">
-            <img src="images/windows.png" alt="Windows Logo" />
-            <p>Windows</p>
-          </div>
-          <div class="tool-item">
-            <img src="images/mysql.png" alt="MySQL Logo" />
-            <p>MySQL</p>
-          </div>
-          <div class="tool-item">
-            <img src="images/php.png" alt="PHP Logo" />
-            <p>PHP</p>
-          </div>
-          <div class="tool-item">
-            <img src="images/cpp.png" alt="C++ Logo" />
-            <p>C++</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Social Media Section -->
-    <section id="social-media">
-      <div class="container">
-        <h2>Connect With Me</h2>
-        <div class="social-icons">
-          <a href="https://facebook.com" target="_blank" class="social-icon"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="https://twitter.com" target="_blank" class="social-icon"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="https://instagram.com" target="_blank" class="social-icon"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="https://linkedin.com" target="_blank" class="social-icon"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a href="https://codepen.io/sonumahajan" target="_blank" class="social-icon"
-            ><i class="fab fa-codepen"></i
-          ></a>
-          <a href="https://github.com/sonumahajan" target="_blank" class="social-icon"
-            ><i class="fab fa-github"></i
-          ></a>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact">
       <div class="container">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/mdopwjrp">
-          <label for="name"
-            >My name is
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="Your Name"
-            />
-          </label>
-          <label for="message"
-            >and I want to say that
-            <textarea
-              id="message"
-              name="message"
-              required
-              placeholder="Your Message"
-            ></textarea>
-          </label>
-          <label for="email"
-            >You can reach me at
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="Your Email"
-            />
-          </label>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
+        <div class="contact-container animate">
+          <div class="contact-header">
+            <h2 class="section-title">Get In Touch</h2>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-details">
+                <div class="contact-detail">
+                  <i class="fas fa-envelope"></i>
+                  <span>mahajan00sonu@gmail.com</span>
+                </div>
+                <div class="contact-detail">
+                  <i class="fas fa-phone"></i>
+                  <span>+91 7024267130</span>
+                </div>
+                <div class="contact-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Punjab, India</span>
+                </div>
+              </div>
+
+              <div class="contact-separator"></div>
+
+              <form
+                class="contact-form-compact"
+                action="https://formspree.io/f/mdopwjrp"
+                method="POST"
+              >
+                <div class="form-row">
+                  <div class="form-group-compact">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control-compact"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group-compact">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control-compact"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group-compact">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-control-compact"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-center">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-  </body>
-  <script>
-    // Simple form validation (optional)
-    document.querySelector("form").addEventListener("submit", function (event) {
-      const name = document.getElementById("name").value;
-      const message = document.getElementById("message").value;
-      const email = document.getElementById("email").value;
 
-      if (!name || !message || !email) {
-        alert("Please fill out all fields.");
-        event.preventDefault();
-      } else {
-        alert("Your message has been sent!");
-      }
-    });
-  </script>
+    <!-- Game Section -->
+    <section id="game" class="game">
+      <div class="container">
+        <h2 class="section-title">Play a Quick Game</h2>
+        <div class="game-container animate">
+          <div id="game-over-message">Game Over</div>
+          <div class="game-layout">
+            <div class="game-canvas-container">
+              <canvas id="game-canvas" width="730" height="400"></canvas>
+            </div>
+            <div class="game-sidebar">
+              <div class="game-score">
+                <h3>Score</h3>
+                <div id="score-display">0</div>
+              </div>
+              <div class="game-controls">
+                <button class="btn" id="start-game">Start Game</button>
+                <button class="btn" id="reset-game">Reset</button>
+              </div>
+              <div class="game-instructions">
+                <h4>How to Play</h4>
+                <p>
+                  Use the mouse or arrow keys (← →) to move the paddle and keep
+                  the ball in play. Break all bricks to win!
+                  <span
+                    ><a
+                      href="https://sonumahajan.github.io/portfolio_kaboom/"
+                      style="font-style: none; color: red"
+                      >New Game</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <!-- <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/the_sonu_0/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/the_sonu_0/" target="_blank"><i class="fab fa-instagram"></i></a> -->
+          <a
+            href="https://in.linkedin.com/in/sonu-901881192?trk=public_profile_browsemap"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://codepen.io/sonumahajan" target="_blank"
+            ><i class="fab fa-codepen"></i
+          ></a>
+          <a href="https://github.com/sonumahajan" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <p>&copy; 2025 Sonu Mahajan. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>
