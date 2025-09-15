@@ -1170,7 +1170,16 @@ footer {
   :root {
     --container-width: 98%;
   }
-
+  #game-over-message {
+    position: absolute;
+    left: 100px;
+    width:100%;
+    margin-left: 10%;
+    margin-top: -30%;
+    text-align: center;
+    font-size: 10px;
+    padding: 20px 40px;
+  }
   .mob_p {
     margin-bottom: -10vh;
   }
