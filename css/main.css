@@ -1166,10 +1166,17 @@ footer {
     height: 180px;
   }
 }
-
 @media (max-width: 576px) {
   :root {
     --container-width: 98%;
+  }
+
+  .mob_p {
+    margin-bottom: -10vh;
+  }
+
+  .timeline-item:nth-child(even)::after {
+    left: 17px;
   }
 
   section {
@@ -1203,13 +1210,29 @@ footer {
 
   .game-sidebar {
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
   }
 
+  .game-score,
+  .game-controls,
+  .game-instructions {
+    width: 100%;
+    text-align: center;
+  }
+
+  .game-score {
+    order: 1;
+    margin-bottom: 10px;
+  }
+
   .game-controls {
-    flex-direction: row;
+    order: 2;
+    margin-bottom: 10px;
+  }
+
+  .game-instructions {
+    order: 3;
   }
 
   #game-canvas {
