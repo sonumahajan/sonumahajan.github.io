@@ -81,6 +81,8 @@ skillsObserver.observe(bar);
 const canvas = document.getElementById("game-canvas");
 const ctx = canvas.getContext("2d");
 const startResetButton = document.getElementById("start-reset-game");
+const moveLeftButton = document.getElementById("move-left");
+const moveRightButton = document.getElementById("move-right");
 const gameOverMessage = document.getElementById("game-over-message");
 
 let gameRunning = false;
@@ -121,6 +123,9 @@ const keys = {
     right: false,
 };
 
+let moveLeftActive = false;
+let moveRightActive = false;
+
 function drawBall() {
     ctx.beginPath();
     ctx.arc(ballX, ballY, ballRadius, 0, Math.PI * 2);
@@ -160,11 +165,11 @@ function updateScoreDisplay() {
 }
 
 function movePaddle() {
-    if (keys.left) {
+    if (keys.left || moveLeftActive) {
         paddleX -= paddleSpeed;
         if (paddleX < 0) paddleX = 0;
     }
-    if (keys.right) {
+    if (keys.right || moveRightActive) {
         paddleX += paddleSpeed;
         if (paddleX > canvas.width - paddleWidth)
             paddleX = canvas.width - paddleWidth;
@@ -206,7 +211,12 @@ function draw() {
         for (let r = 0; r < brickRowCount; r++) {
             const b = bricks[c][r];
             if (b.status === 1) {
-                if (ballX > b.x && ballX < b.x + brickWidth && ballY > b.y && ballY < b.y + brickHeight) {
+                if (
+                    ballX > b.x &&
+                    ballX < b.x + brickWidth &&
+                    ballY > b.y &&
+                    ballY < b.y + brickHeight
+                ) {
                     ballDY = -ballDY;
                     b.status = 0;
                     score++;
@@ -250,13 +260,6 @@ function hideGameOver() {
     gameOverMessage.textContent = "Game Over";
     gameOverMessage.style.backgroundColor = "rgba(255, 102, 102, 0.3)";
     gameOverMessage.style.color = "maroon";
-}
-
-function mouseMoveHandler(e) {
-    const relativeX = e.clientX - canvas.getBoundingClientRect().left;
-    if (relativeX > 0 && relativeX < canvas.width) {
-        paddleX = relativeX - paddleWidth / 2;
-    }
 }
 
 function keyDownHandler(e) {
@@ -307,6 +310,19 @@ function updateButton() {
     }
 }
 
+// ✅ Add handlers for left and right buttons
+moveLeftButton.addEventListener("mousedown", () => { moveLeftActive = true; });
+moveLeftButton.addEventListener("mouseup", () => { moveLeftActive = false; });
+moveLeftButton.addEventListener("mouseleave", () => { moveLeftActive = false; });
+moveLeftButton.addEventListener("touchstart", (e) => { e.preventDefault(); moveLeftActive = true; }, { passive: false });
+moveLeftButton.addEventListener("touchend", () => { moveLeftActive = false; });
+
+moveRightButton.addEventListener("mousedown", () => { moveRightActive = true; });
+moveRightButton.addEventListener("mouseup", () => { moveRightActive = false; });
+moveRightButton.addEventListener("mouseleave", () => { moveRightActive = false; });
+moveRightButton.addEventListener("touchstart", (e) => { e.preventDefault(); moveRightActive = true; }, { passive: false });
+moveRightButton.addEventListener("touchend", () => { moveRightActive = false; });
+
 startResetButton.addEventListener("click", () => {
     if (!gameRunning) {
         resetGame();
@@ -319,38 +335,8 @@ startResetButton.addEventListener("click", () => {
     }
 });
 
-document.addEventListener("mousemove", mouseMoveHandler);
 document.addEventListener("keydown", keyDownHandler);
 document.addEventListener("keyup", keyUpHandler);
-
-// ✅ Add touch control support here
-function touchStartHandler(e) {
-    e.preventDefault();
-    if (e.touches.length > 0) {
-        const touchX = e.touches[0].clientX - canvas.getBoundingClientRect().left;
-        paddleX = touchX - paddleWidth / 2;
-    }
-}
-
-function touchMoveHandler(e) {
-    e.preventDefault();
-    if (e.touches.length > 0) {
-        const touchX = e.touches[0].clientX - canvas.getBoundingClientRect().left;
-        paddleX = touchX - paddleWidth / 2;
-        if (paddleX < 0) paddleX = 0;
-        if (paddleX > canvas.width - paddleWidth) paddleX = canvas.width - paddleWidth;
-    }
-}
-
-function touchEndHandler(e) {
-    e.preventDefault();
-    // Optional cleanup if needed
-}
-
-canvas.addEventListener("touchstart", touchStartHandler, { passive: false });
-canvas.addEventListener("touchmove", touchMoveHandler, { passive: false });
-canvas.addEventListener("touchend", touchEndHandler, { passive: false });
-
 
 // Initial draw
 drawBricks();
@@ -358,6 +344,7 @@ drawBall();
 drawPaddle();
 updateScoreDisplay();
 updateButton();
+
 
 
 // Background Animation

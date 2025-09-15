@@ -990,6 +990,14 @@ textarea.form-control-compact {
   flex-direction: column;
   gap: 0.8rem;
 }
+.btn-group{
+  align-items: center;
+  position: relative;
+  left:25%;
+}
+#move-left{
+  margin-right: 5vh;
+}
 
 /* Footer */
 footer {
