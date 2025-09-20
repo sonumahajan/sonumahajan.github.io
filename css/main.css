@@ -991,12 +991,18 @@ textarea.form-control-compact {
   gap: 0.8rem;
 }
 .btn-group{
+  display:block;
   align-items: center;
   position: relative;
   left:25%;
 }
 #move-left{
   margin-right: 5vh;
+}
+@media (min-width: 993px) {
+  .btn-group {
+    display: none;
+  }
 }
 
 /* Footer */
@@ -1178,6 +1184,7 @@ footer {
   :root {
     --container-width: 98%;
   }
+  
   #game-over-message {
     position: absolute;
     left: 100px;
