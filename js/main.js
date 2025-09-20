@@ -15,6 +15,67 @@ document
 // Theme Toggle
 const themeToggle = document.getElementById("theme-toggle");
 const themeIcon = themeToggle.querySelector("i");
+const hiddenAudioTrigger = document.getElementById("hidden-audio-trigger");
+
+// Ambience Audio Elements
+const nightAudio = document.getElementById("night-audio");
+const morningAudio = document.getElementById("morning-audio");
+
+function playNightAudio() {
+        console.log('playNightAudio called');
+        if (morningAudio) {
+            morningAudio.pause();
+            morningAudio.currentTime = 0;
+        }
+        if (nightAudio) {
+            nightAudio.volume = 0.5;
+            let playPromise = nightAudio.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    console.log('Night audio playing');
+                }).catch((error) => {
+                    console.log('Night audio play error:', error);
+                });
+            }
+        }
+}
+
+function playMorningAudio() {
+    console.log('playMorningAudio called');
+    if (nightAudio) {
+        nightAudio.pause();
+        nightAudio.currentTime = 0;
+    }
+    if (morningAudio) {
+        morningAudio.volume = 0.5;
+        let playPromise = morningAudio.play();
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                console.log('Morning audio playing');
+            }).catch((error) => {
+                console.log('Morning audio play error:', error);
+            });
+        }
+    }
+}
+
+// Hidden button click handler to play correct audio
+hiddenAudioTrigger.addEventListener("click", function() {
+  if (document.body.classList.contains("dark-mode")) {
+    playNightAudio();
+  } else {
+    playMorningAudio();
+  }
+});
+
+// Try to play sound on page load (may be blocked by browser)
+window.addEventListener("DOMContentLoaded", function() {
+    hiddenAudioTrigger.click();
+});
+// Also play on first user click (guaranteed to work)
+window.addEventListener("click", function() {
+    hiddenAudioTrigger.click();
+}, { once: true });
 
 // Set initial theme icon based on current mode (dark mode default)
 if (document.body.classList.contains("dark-mode")) {
@@ -557,16 +618,17 @@ initBackground();
 const originalThemeToggle = themeToggle.addEventListener;
 themeToggle.addEventListener("click", () => {
 // Call original theme toggle logic
-document.body.classList.toggle("light-mode");
-document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
+    document.body.classList.toggle("dark-mode");
 
-if (document.body.classList.contains("dark-mode")) {
-    themeIcon.classList.remove("fa-sun");
-    themeIcon.classList.add("fa-moon");
-} else {
-    themeIcon.classList.remove("fa-moon");
-    themeIcon.classList.add("fa-sun");
-}
+    if (document.body.classList.contains("dark-mode")) {
+        themeIcon.classList.remove("fa-sun");
+        themeIcon.classList.add("fa-moon");
+    } else {
+        themeIcon.classList.remove("fa-moon");
+        themeIcon.classList.add("fa-sun");
+    }
+    hiddenAudioTrigger.click();
 
 // Update background animation
 isDarkMode = document.body.classList.contains("dark-mode");
