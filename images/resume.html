@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      @media print {
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        .no-print {
+          display: none;
+        }
+        @page {
+          margin: 0.4in 0.5in;
+        }
+      }
+
+      body {
+        font-family: "Calibri", "Arial", sans-serif;
+        line-height: 1.35;
+        color: #2d2d2d;
+        background: #fff;
+        padding: 15px;
+        font-size: 10.5px;
+      }
+
+      .resume-container {
+        max-width: 850px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px 40px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+      }
+
+      .header h1 {
+        font-size: 30px;
+        color: #1a5490;
+        margin-bottom: 3px;
+        letter-spacing: 2px;
+        font-weight: 700;
+      }
+
+      .contact-info {
+        font-size: 10px;
+        color: #444;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .contact-info a {
+        color: #1a5490;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .contact-info span {
+        color: #666;
+      }
+
+      .section {
+        margin-bottom: 12px;
+      }
+
+      .section-title {
+        font-size: 12px;
+        font-weight: 700;
+        color: #1a5490;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        padding-bottom: 4px;
+        border-bottom: 2px solid #1a5490;
+        letter-spacing: 1px;
+      }
+
+      .summary {
+        font-size: 10.5px;
+        text-align: justify;
+        line-height: 1.45;
+        color: #2d2d2d;
+      }
+
+      .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px 15px;
+        font-size: 10px;
+      }
+
+      .skill-item {
+        display: flex;
+        line-height: 1.4;
+      }
+
+      .skill-label {
+        font-weight: 700;
+        min-width: 135px;
+        color: #1a5490;
+      }
+
+      .skill-content {
+        color: #2d2d2d;
+        flex: 1;
+      }
+
+      .experience-item {
+        margin-bottom: 13px;
+      }
+
+      .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 3px;
+      }
+
+      .job-title {
+        font-weight: 700;
+        font-size: 11.5px;
+        color: #1a5490;
+      }
+
+      .job-date {
+        font-size: 9.5px;
+        color: #555;
+        font-weight: 600;
+      }
+
+      .company-location {
+        font-size: 10px;
+        color: #555;
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+
+      .experience-item ul {
+        margin-left: 18px;
+        margin-top: 4px;
+      }
+
+      .experience-item li {
+        font-size: 10px;
+        margin-bottom: 3px;
+        line-height: 1.4;
+        color: #2d2d2d;
+      }
+
+      .education-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px 20px;
+      }
+
+      .education-item {
+        line-height: 1.35;
+      }
+
+      .degree {
+        font-weight: 700;
+        font-size: 10.5px;
+        color: #1a5490;
+        margin-bottom: 2px;
+      }
+
+      .university {
+        font-size: 9.5px;
+        color: #555;
+        margin-bottom: 1px;
+      }
+
+      .edu-details {
+        font-size: 9px;
+        color: #666;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px 20px;
+      }
+
+      .achievement-item,
+      .cert-item {
+        display: flex;
+        align-items: flex-start;
+        font-size: 10px;
+        line-height: 1.35;
+        margin-bottom: 2px;
+      }
+
+      .bullet {
+        margin-right: 6px;
+        color: #1a5490;
+        font-weight: 700;
+        min-width: 8px;
+      }
+
+      .item-content {
+        color: #2d2d2d;
+        flex: 1;
+      }
+
+      .item-title {
+        font-weight: 700;
+        color: #1a5490;
+      }
+
+      .download-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #1a5490;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        transition: background 0.3s;
+      }
+
+      .download-btn:hover {
+        background: #0d3a6b;
+      }
+
+      @media print {
+        .resume-container {
+          box-shadow: none;
+          padding: 0;
+          max-width: 100%;
+        }
+        body {
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="download-btn no-print" onclick="window.print()">
+      📄 Download PDF
+    </button>
+
+    <div class="resume-container">
+      <div class="header">
+        <h1>SONU</h1>
+        <div class="contact-info">
+          <span
+            >📧
+            <a href="mailto:mahajan00sonu@gmail.com"
+              >mahajan00sonu@gmail.com</a
+            ></span
+          >
+          <span>📱 +91 7024267130</span>
+          <span
+            >🔗
+            <a href="https://www.linkedin.com/in/sonu-901881192"
+              >LinkedIn</a
+            ></span
+          >
+          <span>💻 <a href="https://github.com/sonumahajan/">GitHub</a></span>
+          <span>🌐 <a href="https://sonumahajan.github.io/">Portfolio</a></span>
+          <span>📍 Punjab, India</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="summary">
+          Results-driven Software Developer with 2+ years of experience
+          specializing in enterprise integration, automation, and digital
+          transformation. Proven expertise in delivering scalable solutions for
+          17,000+ employees managing 18,000+ IT assets through Python, Django,
+          SAP PI/PO, and REST APIs. Demonstrated success in ERP-HCM
+          integrations, QR/RFID platforms, real-time analytics dashboards, and
+          multi-system integrations.
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-container">
+          <div class="skill-item">
+            <span class="skill-label">Programming:</span>
+            <span class="skill-content"
+              >Python, Java, C/C++, SQL, JavaScript, HTML5, CSS3</span
+            >
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">Frameworks:</span>
+            <span class="skill-content">Django, Flask, Tkinter, REST APIs</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">Databases:</span>
+            <span class="skill-content">MSSQL, MySQL, PostgreSQL</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">Enterprise Systems:</span>
+            <span class="skill-content"
+              >SAP PI/PO, SAP MES, ERP Integration, HCM Tools</span
+            >
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">Integration Tech:</span>
+            <span class="skill-content"
+              >SFTP, JDBC/ODBC, RFID/QR Systems, IoT Devices</span
+            >
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">Cloud & Platforms:</span>
+            <span class="skill-content"
+              >AWS, Google Cloud Platform, SharePoint, Power Apps</span
+            >
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">Tools:</span>
+            <span class="skill-content"
+              >Git/GitHub, Postman, VS Code, Eclipse, Docker</span
+            >
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">Security:</span>
+            <span class="skill-content"
+              >Penetration Testing, Ethical Hacking, Cybersecurity</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Professional Experience</div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <span class="job-title">Functional Lead Developer</span>
+            <span class="job-date">October 2023 – Present</span>
+          </div>
+          <div class="company-location">Trident Limited, Punjab, India</div>
+          <ul>
+            <li>
+              Architected and deployed QR-enabled Digital Business Card system
+              for 500+ employees, eliminating physical cards and seamlessly
+              integrating with HCM system for automated profile synchronization
+            </li>
+            <li>
+              Engineered comprehensive QR/RFID-enabled Asset Inventory platform
+              managing ~18,000 IT assets with full lifecycle tracking modules
+              (onboarding, allocation, maintenance, disposal) and automated
+              employee-asset mapping through HCM integration
+            </li>
+            <li>
+              Integrated SharePoint workflows with HCM tool to manage employee
+              details and organizational hierarchy of ~17,000 employees,
+              enabling Power Apps and SharePoint-based business process
+              applications
+            </li>
+            <li>
+              Executed multi-system integrations connecting ERP systems,
+              third-party applications, and IoT/hardware devices to streamline
+              data flow, reduce manual intervention by 40%, and ensure 99.5%
+              operational continuity
+            </li>
+            <li>
+              Developed custom real-time monitoring dashboards and automated
+              reports with predictive analytics capabilities, enabling
+              data-driven decision support for executive leadership
+            </li>
+            <li>
+              Led enterprise-wide process automation initiatives reducing manual
+              effort by 35%, improving accuracy by 30%, and enhancing team
+              productivity across 5 departments
+            </li>
+            <li>
+              Managed vendor relationships through regular technical discussions
+              with 4 active vendors and evaluated 12+ vendors/solutions across
+              development, integration, and third-party tools to optimize
+              technology stack
+            </li>
+            <li>
+              Mentored 5 interns and junior developers through code reviews,
+              technical training sessions, and project guidance, accelerating
+              their professional growth and contributing to 100% project
+              delivery success rate
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <span class="job-title">SAP MES Intern</span>
+            <span class="job-date">January 2023 – July 2023</span>
+          </div>
+          <div class="company-location">
+            Trident Limited, Madhya Pradesh, India
+          </div>
+          <ul>
+            <li>
+              Implemented equipment data integration with ERP system for
+              centralized monitoring, reporting, and real-time equipment
+              performance tracking across manufacturing facilities
+            </li>
+            <li>
+              Designed and developed user-friendly dashboards providing
+              real-time visibility into manufacturing process performance, OEE
+              metrics, and production KPIs for shop floor management
+            </li>
+            <li>
+              Collaborated with cross-functional teams to identify automation
+              opportunities and implement solutions that improved data accuracy
+              and reduced manual data entry by 25%
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="education-grid">
+          <div class="education-item">
+            <div class="degree">Master of Computer Applications (MCA)</div>
+            <div class="university">Panjab University, Chandigarh</div>
+            <div class="edu-details">
+              Computer Science | May 2020 – June 2023 | 76.0%
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="degree">Bachelor of Computer Applications (BCA)</div>
+            <div class="university">KLSD College, Ludhiana</div>
+            <div class="edu-details">
+              Computer Science | May 2017 – April 2020 | 75.8%
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Achievements & Awards</div>
+        <div class="two-column">
+          <div>
+            <div class="achievement-item">
+              <span class="bullet">▪</span>
+              <span class="item-content"
+                ><span class="item-title">Trident Values Day Award (2024)</span>
+                – Recognized for outstanding initiatives in development and
+                digital transformation</span
+              >
+            </div>
+            <div class="achievement-item">
+              <span class="bullet">▪</span>
+              <span class="item-content"
+                ><span class="item-title">Cyber Security Hackathon (2021)</span>
+                – Competed in Indian Army's Sainya Ranakshetram national-level
+                competition</span
+              >
+            </div>
+          </div>
+          <div>
+            <div class="achievement-item">
+              <span class="bullet">▪</span>
+              <span class="item-content"
+                ><span class="item-title"
+                  >Open-Source Contributor (2020–2025)</span
+                >
+                – 10+ public repositories, active Hacktoberfest
+                participant</span
+              >
+            </div>
+            <div class="achievement-item">
+              <span class="bullet">▪</span>
+              <span class="item-content"
+                ><span class="item-title">Technical Blogger</span> – Share
+                insights on enterprise integration, automation, and emerging
+                technologies</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Certifications</div>
+        <div class="two-column">
+          <div>
+            <div class="cert-item">
+              <span class="bullet">▪</span>
+              <span class="item-content"
+                ><span class="item-title"
+                  >Web Application Penetration Testing</span
+                >
+                – Security fundamentals and ethical hacking</span
+              >
+            </div>
+            <div class="cert-item">
+              <span class="bullet">▪</span>
+              <span class="item-content"
+                ><span class="item-title">Introduction to Cyber Security</span>
+                – Swayam National Platform (2021)</span
+              >
+            </div>
+            <div class="cert-item">
+              <span class="bullet">▪</span>
+              <span class="item-content"
+                ><span class="item-title">Responsive Web Design</span> –
+                freeCodeCamp (2019)</span
+              >
+            </div>
+          </div>
+          <div>
+            <div class="cert-item">
+              <span class="bullet">▪</span>
+              <span class="item-content"
+                ><span class="item-title">Generative AI Studio</span> – Google
+                Cloud Platform AI/ML certification</span
+              >
+            </div>
+            <div class="cert-item">
+              <span class="bullet">▪</span>
+              <span class="item-content"
+                ><span class="item-title">Geoprocessing using Python</span> –
+                ISRO Advanced Training (2021)</span
+              >
+            </div>
+            <div class="cert-item">
+              <span class="bullet">▪</span>
+              <span class="item-content"
+                ><span class="item-title">Ethical Hacker Professional</span> –
+                Comprehensive security training</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onbeforeprint = function () {
+        document.body.style.padding = "0";
+      };
+
+      window.onafterprint = function () {
+        document.body.style.padding = "15px";
+      };
+    </script>
+  </body>
+</html>
